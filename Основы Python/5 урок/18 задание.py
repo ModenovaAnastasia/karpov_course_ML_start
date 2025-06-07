@@ -10,7 +10,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
-data = pd.read_csv('/Users/anastasiamodenova/Downloads/data.csv')
+data = pd.read_csv('data.csv')
 
 data['categories_count'] = data['categories'].str.count(',') + 1
 filtered = data[data['categories_count'] > 20]

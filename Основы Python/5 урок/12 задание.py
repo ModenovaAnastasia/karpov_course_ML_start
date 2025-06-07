@@ -9,7 +9,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
-data = pd.read_csv('/Users/anastasiamodenova/Downloads/data.csv')
+data = pd.read_csv('data.csv')
 df=data[data['name'] == 'Taco Bell']
 result = df['city'].value_counts().head(5)
 print(result)

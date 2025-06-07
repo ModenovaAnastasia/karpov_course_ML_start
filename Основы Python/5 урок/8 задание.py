@@ -10,7 +10,7 @@ pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
-data = pd.read_csv('/Users/anastasiamodenova/Downloads/data.csv')
+data = pd.read_csv('data.csv')
 result=data[
     (((data['name'] == 'Taco Bell') | (data['city'] == 'New York')) & (~(data['menus.name'].isin(['Volcano Taco', 'Fresco Soft Taco']))))
 ]
